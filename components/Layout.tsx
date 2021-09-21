@@ -1,9 +1,20 @@
 import Head from 'next/head';
+import styled from 'styled-components';
 
 import Reset from '../styles/Reset';
 
+import Box from './Box';
 import Footer from './Footer';
 import Header from './Header';
+
+const Main = styled(Box)`
+  margin-top: 4rem;
+  padding-top: 0;
+
+  h1 {
+    text-align: center;
+  }
+`;
 
 const Layout: React.FC = ({ children }) => {
   return (
@@ -16,7 +27,8 @@ const Layout: React.FC = ({ children }) => {
       <Reset />
 
       <Header />
-      <main>{children}</main>
+      <Main>{children}</Main>
+      <Box>Your comment section here</Box>
       <Footer />
     </>
   );
