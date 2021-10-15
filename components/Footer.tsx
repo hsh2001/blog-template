@@ -10,6 +10,8 @@ const FooterContainer = styled.footer`
 const Footer: React.FC = () => (
   <FooterContainer>
     Copyright 2021 John Doe. All rights reserved.
+    <br />
+    Blog template by Seung hyun Hwang.
   </FooterContainer>
 );
 
